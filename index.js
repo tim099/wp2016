@@ -5,13 +5,14 @@ function display_alert(){
   	count=count+1;
 }
 var pic_num=1;
+var total_pic_num=4;
 document.querySelector(".but2").onclick = function() {
 	update_pic();
 }
 var timer = setInterval(update_pic, 2500);
 
 function update_pic() {
-	if(pic_num<3){
+	if(pic_num<total_pic_num){
 		pic_num=pic_num+1;
 	}else{
 		pic_num=1;
